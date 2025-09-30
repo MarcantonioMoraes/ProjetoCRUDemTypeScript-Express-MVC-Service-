@@ -10,5 +10,5 @@ app.use (express.json());
 app.use("/api", taskRoutes);
 
 app.listen (PORT, () =>{
-console.log( `Servidor rodando em http://localhost:$(PORT)/api `);
+    console.log(`🚀 Servidor rodando em http://localhost:${PORT}`);
 });
