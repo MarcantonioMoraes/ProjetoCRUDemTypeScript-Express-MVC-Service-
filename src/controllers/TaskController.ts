@@ -1,6 +1,6 @@
-import { Request, Response ) from "express"
-import { TaskService } from "../services/TaskService";
-import { TaskView } from "../views/TaskView"
+import type { Request, Response } from "express";
+import { TaskService } from "../services/TaskService.js";
+import { TaskView } from "../views/TaskView.js"
 
 export class TaskController {
     private service= new TaskService ();
