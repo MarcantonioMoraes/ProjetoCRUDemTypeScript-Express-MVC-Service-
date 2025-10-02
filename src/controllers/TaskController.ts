@@ -12,7 +12,7 @@ export class TaskController {
 
     getOne (req: Request, res: Response): void{
     try {
-     const id = Number (req.params.id);
+    const id = Number (req.params.id);
     const task = this.service.getOne (id);
     if (!task) return TaskView.error (res, "Tarefa não encontrada", 404);
     TaskView.success (res, task);
@@ -41,7 +41,7 @@ export class TaskController {
     TaskView.error (res, err.message, 400);
     }
     }
-    
+
     delete (req: Request, res: Response): void {
     try{
     const id = Number (req.params.id);
